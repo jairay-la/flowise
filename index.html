@@ -4,13 +4,16 @@
     <title>Flowise Chatbot</title>
 </head>
 <body>
+    <!-- Chatbot container element -->
     <flowise-fullchatbot></flowise-fullchatbot>
+
+    <!-- Script to initialize the chatbot -->
     <script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.init({
-        chatflowid: "ca4dce4d-3adc-4870-ab78-ef6a667ac705",
-        apiHost: "https://joeraylo-flowise-book.hf.space",
-    })
-</script>
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.initFull({
+            chatflowid: "ca4dce4d-3adc-4870-ab78-ef6a667ac705",
+            apiHost: "https://joeraylo-flowise-book.hf.space",
+        })
+    </script>
 </body>
 </html>
